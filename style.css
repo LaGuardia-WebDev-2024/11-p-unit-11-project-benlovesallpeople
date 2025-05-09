@@ -1,47 +1,19 @@
 body {
-  background-color: aliceblue;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-/*   margin-top: 10%; */
-  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c8e6ff;
+  font-family: Arial, sans-serif;
 }
 
-html{
-  height: 100%;
-  width: 100%;
-}
+canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: #c8e6ff;
 
-#myCanvas {
-  border: 1px solid black;
-}
-
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-bottom: 20px;
-}
-
-.pic{
-  height: 450px;
-  width: 600px;
-  object-fit: cover;
-  border: 1px solid black;
-}
-
-h2{
-  color: black;
-/*   font-size: 10px; */
-}
-
-#start{
-  text-align: left;
-}
-
-#end{
-  text-align: right;
+@media (max-width: 600px) {
+  canvas {
+    width: 100%;
+    height: auto;
+  }
 }
